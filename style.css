@@ -93,6 +93,8 @@ header {
     background-image: url("./images/Group14.png");
     background-repeat: no-repeat;
     background-size: 60% 100%;
+    margin-bottom: 0px;
+    margin-left: 0px;
 
 }
 
@@ -155,21 +157,25 @@ header {
     background: #4EC5F7;
     border: none;
 }
-.left-part-section-1-paragraph{
+
+.left-part-section-1-paragraph {
     padding-top: 24px;
     padding-bottom: 17px;
 }
-.section-1-container{
+
+.section-1-container {
     display: flex;
     justify-content: space-between;
     margin-left: 240px;
     margin-right: 240px;
 }
+
 .right-part-section-1-pic img {
-    height: 781px ;
+    height: 781px;
     width: 711px;
 }
-.left-part-section-1{
+
+.left-part-section-1 {
     margin-top: 140px;
 }
 
@@ -191,6 +197,23 @@ header {
         flex-direction: column;
         align-items: center;
     }
+
+    .section-1-container {
+        flex-direction: column-reverse;
+        align-items: center;
+        
+    }
+    .right-part-section-1-pic {
+        height: auto;
+        width: 380px;
+        margin-right: 50px;
+        margin-top: 50px;
+    }
+.left-part-section-1{
+ margin-top: 15px;
+ margin-right: 40px;
+ margin-right: 20px;
+}
 }
 
 @media screen and (min-width:426px) and (max-width:768px) {
@@ -201,5 +224,11 @@ header {
     .container-header-1 {
         flex-direction: column;
         align-items: center;
+    }
+    
+    .section-1-container {
+        flex-direction: column;
+        align-items: center;
+        
     }
 }
